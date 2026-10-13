@@ -1,0 +1,25 @@
+/* Custom block CSS
+   Location: blocks/custom/custom.css
+*/
+
+.block--custom {
+  padding: 1rem;
+  background: var(--eds-surface, #ffffff);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  transition: box-shadow 150ms ease, transform 150ms ease;
+}
+
+.block--custom .block__title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.block--custom .block__content {
+  color: var(--eds-text, #333333);
+}
+
+.block--custom.is-active {
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+  transform: translateY(-2px);
+}
